@@ -1,0 +1,30 @@
+<title>Home</title>
+
+{% include 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <h2>
+    Hello {{ user.username }}!
+  </h2>
+{% endif %}
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Shirts</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Pants</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Shoes</h3>        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
