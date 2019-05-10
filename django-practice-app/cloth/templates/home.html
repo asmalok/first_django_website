@@ -10,23 +10,21 @@
 {% endif %}
 <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-6" align='center'>
         <h3>Shirts</h3>
         {% load static %}
-        <img src="{% static "cloth/images/shirt1.jpg" %}" alt="My image">
-        <!-- <img src="/images/shirt1.jpg"> -->
-        <!-- <img src="/images/shirt1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">  -->
+        <a href="/shirts/"><img src="{% static "images/cover_shirt.png" %}" class="img-rounded" alt="Cinque Terre" width="300" height="350"></a>
       </div>
-      <div class="col-sm-4">
-        <h3>Pants</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="col-md-6" align='center'>
+        <h3 style="text-align: center">Pants</h3>
+        <a href="/pants/"><img src="{% static "images/cover_pants.jpg" %}" class="img-rounded" alt="Cinque Terre" width="300" height="350"></a>
       </div>
-      <div class="col-sm-4">
-        <h3>Shoes</h3>        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="row" align='center'>
+      <div class="col-md-6">
+        <h3 style="text-align: center">Shoes</h3>        
+        <a href="/shoes/"><img src="{% static "images/cover_shoes.jpg" %}" class="img-rounded" alt="Cinque Terre" width="300" height="350"></a>
+      </div>
       </div>
     </div>
-  </div>
 {% endblock %}

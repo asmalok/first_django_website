@@ -8,17 +8,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <title>TITLE</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
+          <a class="navbar-brand" href="/">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="/">Home</a></li>
           <li><a href="#">About TITLE</a></li>
           <li><a href="#">Contact Us</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/shirts/">Shirts</a></li>
+              <li><a href="/pants/">Pants</a></li>
+              <li><a href="/shoes/">Shoes</a></li>
+            </ul>
+          </li>
           </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -38,9 +48,9 @@
     </div>
 
   <main>
-
     {% block content %}
     {% endblock %}
   </main>
 </body>
+
 </html>
