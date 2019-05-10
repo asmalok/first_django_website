@@ -12,8 +12,10 @@
     <div class="row">
       <div class="col-sm-4">
         <h3>Shirts</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        {% load static %}
+        <img src="{% static "cloth/images/shirt1.jpg" %}" alt="My image">
+        <!-- <img src="/images/shirt1.jpg"> -->
+        <!-- <img src="/images/shirt1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">  -->
       </div>
       <div class="col-sm-4">
         <h3>Pants</h3>
