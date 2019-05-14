@@ -10,7 +10,8 @@
   <title>TITLE</title>
 </head>
 
-<body>
+{% load static %}
+<body background="{% static "images/bg.png" %}">
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -43,7 +44,7 @@
     </nav>
   </header>
 
-  <div class="jumbotron text-center">
+  <div class="jumbotron jumbotron-fluid text-center" style="background-color:gainsboro">
     <h1>TITLE</h1> <!-- Change Font -->
     <p></p>
   </div>
