@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
-# from .cloth import views
+# from shop import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('<str:type_clothing>/', shop.views.ClothView.as_view(), name='pants'),
+    # path('<str:type_clothing>/', views.ClothView.as_view(), name='pants'),
     path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
     path('shirts/', TemplateView.as_view(template_name='shirts.html'), name='shirts'),
